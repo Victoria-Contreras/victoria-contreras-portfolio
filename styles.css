@@ -90,13 +90,19 @@ html{
 
 /* Header */
 header {
-    background-image: url('./images/portrait1.jpeg');
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 .welcome {
-    height: 90vh;
+    margin: 0;
+}
+
+.welcome .portrait {
+    max-width: 100%;
+    min-width: 390px;
+    height: 80vh;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
 }
