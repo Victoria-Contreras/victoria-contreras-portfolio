@@ -106,3 +106,8 @@ header {
     margin: 0;
     padding: 0;
 }
+
+/* About */
+.about {
+    padding: 60px 20px;
+}
