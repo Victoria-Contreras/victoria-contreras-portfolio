@@ -126,7 +126,7 @@ nav {
 }
 
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1200px) {
     header {
         display: grid;
         grid-template-columns: 50% 50%;
@@ -161,11 +161,12 @@ nav {
 .about {
     padding: 8vh 6vh;
     text-align: center;
+    line-height: 2;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1200px) {
     .about {
-        padding: 8vh 10vh;
+        padding: 8% 10%;
     }
 }
 
