@@ -1,6 +1,17 @@
 body {
     margin: 0;
+    font-family: 'Montserrat', sans-serif !important;
 }
+h1 {
+    font-family: 'Tenor Sans', sans-serif !important;
+    font-size: 2.5em !important;
+}
+
+h2 {
+    font-family: 'Tenor Sans', sans-serif !important;
+    font-size: 1.5em !important;
+}
+
 html{
     margin: 0;
 }
@@ -87,6 +98,9 @@ html{
     transform: rotate(-135deg);
 }
 
+.nav-link:hover{
+    color: #9F9B49 !important;
+}
 
 /* Header */
 header {
@@ -145,12 +159,37 @@ nav {
 
 /* About */
 .about {
-    padding: 60px 20px;
+    padding: 8vh 6vh;
+    text-align: center;
 }
 
+@media only screen and (min-width: 992px) {
+    .about {
+        padding: 8vh 10vh;
+    }
+}
+
+.sage {
+    color: #9F9B49;
+}
+
+.about h1 {
+    margin-bottom: 15px;
+}
+.about h2{
+    margin-bottom: 15px;
+} 
 /* Skills */
 
 /* Projects */
 .project img {
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
 }
+
+/* Color pallette
+    Black #32363A
+    Dark Brown #6D5D4D
+    Soft Brown #D6CEB6
+    Sage #9F9B49
+*/
