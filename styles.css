@@ -93,8 +93,8 @@ header {
     padding: 0 !important;
     margin: 0 !important;
     display: flex;
-    flex-wrap: wrap-reverse;
-    align-items: flex-end;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 nav {
@@ -113,18 +113,33 @@ nav {
 
 
 @media only screen and (min-width: 992px) {
+    header {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 15vh 85vh;
+    }
+
     #cover-photo {
         background-image: url('./images/portrait-1.jpg');
         height: 100vh;
-        width: 50%;
+        /* width: 50%; */
         background-size: cover;
         background-position: center center;
         background-attachment: scroll;
+        grid-column-start: 1;
+        grid-row-start: 1;
     }
 
     nav {
-        width: 50%;
+        /* width: 50%; */
         background-color: white;
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+
+    .about{
+        grid-column-start: 2;
+        grid-row-start: 2;
     }
 }
 
