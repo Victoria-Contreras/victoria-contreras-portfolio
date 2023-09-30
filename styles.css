@@ -147,3 +147,10 @@ nav {
 .about {
     padding: 60px 20px;
 }
+
+/* Skills */
+
+/* Projects */
+.project img {
+    width: 600px;
+}
