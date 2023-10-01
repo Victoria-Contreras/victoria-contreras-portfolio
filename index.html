@@ -6,21 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Victoria Contreras</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Tenor+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- Header -->
    <header class="container-fluid">
         <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg p-4">
+        <nav class="ms-auto navbar navbar-expand-lg p-4 fs-7">
             <div class="container-fluid justify-content-end">
                 <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="toggler-icon top-bar"></span>
-                    <span class="toggler-icon middle-bar"></span>
-                    <span class="toggler-icon bottom-bar"></span>
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
@@ -32,26 +37,169 @@
                 </div>
             </div>
         </nav>
-        <div class="welcome">
-           
-        </div>
+
+        <!-- Cover photo -->
+        <div id="cover-photo"></div>
+
+        <!-- About -->
+        <section class="about">
+            <h1>Hi, my name is <span class="sage">Victoria</span></h1>
+             <h2>
+                I am an eager junior web developer<br/> 
+                <!-- <span class="sage">problem solver</span>, <span class="sage">creative thinker</span>, <span class="sage">collaborator</span> -->
+             </h2>
+             <p>
+                I've earned a certificate in Full-Stack Web Development through DigitalCrafts, a fully immersive bootcamp. During my
+                program I worked on real-world projects and learned best practices for web development in a range of technologies.
+             </p>    
+             <p>
+                I'm passionate about creating seamless, intuitive, and elegant digital experiences. With my
+                technical background, I bring a unique perspective to UX design, understanding not just how things work under the hood,
+                but also how to make them user-friendly and visually appealing.
+             </p>
+             <p>
+             When I'm not coding, I'm practicing Aerial Circus Arts and Pole Fitness. I am an deeply passionate instructor for new
+             students of many backgrounds. The most rewarding part of my job is helping women grow confidence in themselves.
+             </p>
+         </section>
     </header>
-   <!-- About -->
-   <div class="about">
-        <p>
-        I've earned a certificate in Full-Stack Web Development through DigitalCrafts, a fully immersive bootcamp. During my
-        program I worked on real-world projects and learned best practices for web development in a range of technologies
-        including HTML, CSS, JavaScript and React. My excitement for creating an intuitive experience for users inspired me to
-        pursue a specialty in UX Design.
-        <br/>
-        When I'm not coding, I'm practicing Aerial Circus Arts and Pole Fitness. I recently became an instructor for new
-        students of many backgrounds. The most rewarding part of my job is helping women grow confidence in themselves.
-        </p>
-   </div>
 
    <!-- Skills -->
-
+    <div class="skills-container row justify-content-evenly">
+        <div class="skills-section col-xl-3" id="dev-skills">
+            <div class="row title">
+                <h3>Languages and Frameworks</h3>
+            </div>
+            <div class="row">
+                <div class="item col">
+                    <p>HTML5</p>
+                </div>
+                <div class="item col">
+                    <p>JavaScript</p>
+                </div>
+                <div class="item col">
+                    <p>CSS</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="item col">
+                    <p>Bootstrap</p>
+                </div>
+                <div class="item col">
+                    <p>React</p>
+                </div>
+                <div class="item col">
+                    <p>Redux</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="item col">
+                    <p>PostgreSQL</p>
+                </div>
+                <div class="item col">
+                    <p>Node.js</p>
+                </div>
+                <div class="item col">
+                    <p>Express</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="item col">
+                    <p>Sequelize</p>
+                </div>
+                <div class="item col">
+                    <p>Git</p>
+                </div>
+                <div class="item col">
+                    <p>GitHub</p>
+                </div>
+            </div>
+        </div>
+        <div class="skills-section col-xl-3" id="soft-skills">
+            <div class="row title">
+            <h3>Other Skills</h3>
+            </div>
+            <div class="item">
+                <p>Problem Solving</p>
+            </div>
+            <div class="item">
+                <p>Customer Service Experience</p>
+            </div>
+            <div class="item">
+                <p>Communication</p>
+            </div>
+            <div class="item">
+                <p>Attention to Detail</p>
+            </div>
+        </div>
+        <div class="skills-section col-xl-3" id="learning">
+            <div class="row title">
+            <h3>What I'm Learning</h3>
+            </div>
+            <div class="item">
+                <p>Figma</p>
+            </div>
+            <div class="item">
+                <p>Wireframes</p>
+            </div>
+            <div class="item">
+                <p>Protyping</p>
+            </div>           
+            <div class="item">
+                <p></p>
+            </div>
+        </div>
+    </div>
    <!-- Projects -->
+    <div class="projects-container">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Head's Up</h3>      
+            <a href="https://heads-up-calendar.onrender.com" target="_blank"><img src="images/heads-up.png"/></a>
+            <ul>
+                <li><a href="https://heads-up-calendar.onrender.com" target="_blank">Live Site</a></li>
+                <li><a href="https://github.com/Victoria-Contreras/CalendarGroupProject" target="_blank">GitHub</a></li>
+            </ul>
+            <p>Collaborative Project</p>
+            <p>EJS Template, PostgreSQL, Express, Sequilize</p>
+            <p>The user can create, edit and delete events, share events with friends, and live chat with friends
+                about the events they are attending together.
+                <br />My role was to create Express API routes to update and retrieve events from our PostgreSQL
+                database. I also collaborated with my classmates on displaying event information and creating
+                the necessary associations in our tables giving the user a social app experience.
+            </p>
+        </div>
+        <div class="project">
+            <h3>What's for dinner?</h3>
+            <a href="https://victoria-contreras.github.io/whats_for_dinner/" target="_blank"><img src="images/dinner.png"/></a>
+            <ul>
+                <li><a href="https://victoria-contreras.github.io/whats_for_dinner/" target="_blank">Live
+                        Site</a></li>
+                <li><a href="https://github.com/Victoria-Contreras/whats_for_dinner" target="_blank">GitHub</a>
+                </li>
+            </ul>
+            <p>Collaborative Project</p>
+            <p>JavaScript, HTML, CSS, and API's</p>
+            <p>The user is presented a dish and cooking instructions based on the type
+                of food they searched. They can find a drink pairing by using the random
+                drink generator. <br />My role was to use JavaScript to make API calls and manipulate to DOM
+                to display recipes. I organized a clean coding style for the project and
+                helped my classmates understand JavaScript logic.</p>
+        </div>
+        <div class="project">
+            <h3>SunShine</h3>
+            <a href="https://react-weather-app-yuaf.onrender.com/" target="_blank"><img src="images/weather-app.png"/></a>
+            <ul>
+                <li><a href="https://react-weather-app-yuaf.onrender.com/" target="_blank">Live Site</a></li>
+                <li><a href="https://github.com/Victoria-Contreras/react-weather-app" target="_blank">GitHub</a>
+                </li>
+            </ul>
+            <p>Solo Project</p>
+            <p>React, Redux, Node.js, PostgreSQL, Express, Sequilize</p>
+            <p>When the user searches for a city they can see the detailed current weather and the
+                forecast for the next 7 days. They can save their favorite cities by creating an account</p>
+        </div>
+   </div>
 
    <!-- Footer -->
 
