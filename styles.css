@@ -4,12 +4,17 @@ body {
 }
 h1 {
     font-family: 'Tenor Sans', sans-serif !important;
-    font-size: 2.5em !important;
+    font-size: 45px !important;
 }
 
 h2 {
     font-family: 'Tenor Sans', sans-serif !important;
-    font-size: 1.5em !important;
+    font-size: 25px !important;
+}
+
+h3{
+    font-family: 'Tenor Sans', sans-serif !important;
+    font-size: 20px !important;
 }
 
 html{
@@ -130,7 +135,7 @@ nav {
     header {
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 15vh 85vh;
+        grid-template-rows: 10vh 90vh;
     }
 
     #cover-photo {
@@ -185,7 +190,6 @@ nav {
     height: 80px;
     display: flex;
     align-content: center;
-        font-family: 'Tenor Sans', sans-serif !important;
     
 }
 .skills-container{
