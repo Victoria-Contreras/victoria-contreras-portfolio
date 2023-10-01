@@ -181,7 +181,29 @@ nav {
     margin-bottom: 15px;
 } 
 /* Skills */
+.title {
+    height: 80px;
+    display: flex;
+    align-content: center;
+        font-family: 'Tenor Sans', sans-serif !important;
+    
+}
+.skills-container{
+    padding: 3em 0;
+}
+.skills-section {
+    text-align: center;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.3), 0 0px 0 1px rgba(10, 10, 10, 0.04);
+    color: #4a4a4a;
+    padding: 2em 2em;
+    margin-bottom: 20px;
+}
 
+.item {
+    padding: 0.8em;
+}
 /* Projects */
 .project img {
     width: 100%;
@@ -190,7 +212,6 @@ nav {
 
 /* Color pallette
     Black #32363A
-    Dark Brown #6D5D4D
-    Soft Brown #D6CEB6
+    Soft Brown rgb(220 212 204)
     Sage #9F9B49
 */
