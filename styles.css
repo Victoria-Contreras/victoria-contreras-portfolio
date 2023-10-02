@@ -13,8 +13,14 @@ h2 {
 }
 
 h3{
-    font-family: 'Tenor Sans', sans-serif !important;
-    font-size: 20px !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 3rem !important;
+    font-weight: 800 !important;
+}
+h4 {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 1.5rem !important;
+    font-weight: 600 !important;
 }
 
 html{
@@ -104,7 +110,7 @@ html{
 }
 
 .nav-link:hover{
-    color: #9F9B49 !important;
+    color: #9da558 !important;
 }
 
 /* Header */
@@ -114,15 +120,16 @@ header {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    background: linear-gradient(#e3dacc 95%, transparent);
 }
 
 nav {
     width: 100%;
-    background-color: rgb(220 212 204);
+    background-color: #e3dacc;
 }
 
 #cover-photo {
-    background-image: url('./images/portrait-1.jpg');
+    background-image: url('./images/portrait-standing.jpg');
     height: 100vh;
     width: 100%;
     background-size: cover;
@@ -131,27 +138,30 @@ nav {
 }
 
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px){
     header {
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 10vh 90vh;
+        grid-template-rows: 10% auto;
     }
 
     #cover-photo {
-        background-image: url('./images/portrait-1.jpg');
+        background-image: url('./images/portrait-standing.jpg');
+        min-height: 110%;
         height: 100vh;
-        /* width: 50%; */
         background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
         background-position: center center;
         background-attachment: scroll;
         grid-column-start: 1;
-        grid-row-start: 1;
+        grid-row-start: 2;
+        position: relative;
+        top: -15%;
     }
 
     nav {
-        /* width: 50%; */
-        background-color: white;
         grid-column-start: 2;
         grid-row-start: 1;
     }
@@ -176,7 +186,7 @@ nav {
 }
 
 .sage {
-    color: #9F9B49;
+    color: #9da558;
 }
 
 .about h1 {
@@ -189,11 +199,23 @@ nav {
 .title {
     height: 80px;
     display: flex;
-    align-content: center;
-    
+    align-content: center;  
 }
+
+.section-header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 1.5rem 1rem 1.5rem;
+}
+
+.section-header h3 {
+    padding: 0px 2rem;
+    border-bottom: 10px double #9da558;
+}
+
 .skills-container{
-    padding: 3em 0;
+    padding: 2rem 1.5rem 3.5rem 1.5rem;
 }
 .skills-section {
     text-align: center;
@@ -201,14 +223,49 @@ nav {
     border-radius: 6px;
     box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.3), 0 0px 0 1px rgba(10, 10, 10, 0.04);
     color: #4a4a4a;
-    padding: 2em 2em;
+    padding: 2rem 2rem;
     margin-bottom: 20px;
 }
 
 .item {
-    padding: 0.8em;
+    padding: 0.8rem;
 }
 /* Projects */
+#transition-photo {
+    background-image: url('./images/portrait-1.jpg');
+    background-size: cover;
+    background-position: center center;
+    padding: 8rem 0;
+    background-attachment: fixed;
+}
+
+#transition-quote{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6); 
+    border-radius: 6px;
+    padding: 2em;
+    margin: 2em;
+}
+
+@media only screen and (min-width: 1200px) {
+    #transition-quote {
+        width: 30%;
+        position: relative;
+        left: 10%;
+    }
+}
+
+.transition-quote p {
+    margin: 0 !important;
+}
+
+.projects-container{
+        padding: 3em 0;
+}
+
+.project {
+    margin: 2% 8%;
+}
 .project img {
     width: 100%;
     max-width: 600px;
@@ -216,6 +273,6 @@ nav {
 
 /* Color pallette
     Black #32363A
-    Soft Brown rgb(220 212 204)
-    Sage #9F9B49
+    Soft Brown rgb(220 212 204) dcd4cc
+    Sage #9F9B49 9da558
 */
