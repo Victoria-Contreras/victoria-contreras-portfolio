@@ -203,12 +203,19 @@ nav {
 }
 
 .section-header {
+    display: flex;
+    justify-content: center;
     text-align: center;
-    padding-bottom: 20px;
+    padding: 2rem 1.5rem 1rem 1.5rem;
+}
+
+.section-header h3 {
+    padding: 0px 2rem;
+    border-bottom: 10px double #9da558;
 }
 
 .skills-container{
-    padding: 3rem 1.5rem;
+    padding: 2rem 1.5rem 3.5rem 1.5rem;
 }
 .skills-section {
     text-align: center;
@@ -267,5 +274,5 @@ nav {
 /* Color pallette
     Black #32363A
     Soft Brown rgb(220 212 204) dcd4cc
-    Sage #9F9B49
+    Sage #9F9B49 9da558
 */
