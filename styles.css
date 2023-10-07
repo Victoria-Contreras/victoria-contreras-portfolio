@@ -132,11 +132,14 @@ nav {
     background-image: url('./images/portrait-standing.jpg');
     height: 100vh;
     width: 100%;
-    background-size: cover;
+    background-size: auto 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-position: center center;
+    background-position: center 25%; */
     background-attachment: fixed;
 }
 
@@ -236,10 +239,11 @@ nav {
 /* Transition */
 #transition-photo {
     background-image: url('./images/portrait-1.jpg');
-    background-size: cover;
+    /* background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    -o-background-size: cover;
+    -o-background-size: cover; */
+    background-size: auto 100%;
     background-position: center center;
     padding: 8rem 0;
     background-attachment: fixed;
