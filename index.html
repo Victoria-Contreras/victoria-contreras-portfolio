@@ -31,7 +31,7 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#about">About</a>
                         <a class="nav-link" href="#skills">Skills</a>
                         <a class="nav-link" href="#projects">Projects</a>
                         <a class="nav-link" href="#">Contact</a>
@@ -44,7 +44,7 @@
         <div id="cover-photo"></div>
 
         <!-- About -->
-        <section class="about">
+        <section class="about" id="about">
             <h1>Hi, my name is <span class="sage">Victoria</span></h1>
              <h2>
                 I am an eager Junior Web Developer<br/> 
@@ -148,71 +148,108 @@
             <div class="item">
                 <p>Protyping</p>
             </div>           
-            <div class="item">
-                <p></p>
-            </div>
         </div>
     </div>
-
-   <!-- Projects -->
+    <!-- transition -->
     <div id="transition-photo" class="container-fluid">
         <div id="transition-quote" >
             <p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam
-            eaque ie vitae dicta sunt, explicabo. Nemo enim ipsam
-            voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione
+                eaque ie vitae dicta sunt, explicabo. Nemo enim ipsam
+                voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione
             </p>
             <p><strong>Awesome Person</strong> at Shine Fitness Studio</p>
         </div>
     </div>
+    <!-- Projects -->
     <div class="section-header" id="projects">
         <h3>PROJECTS</h3>
     </div>
-    <div class="projects-container" >
-        <div class="project">
-            <h4>Head's Up</h4>      
-            <a href="https://heads-up-calendar.onrender.com" target="_blank"><img src="images/heads-up.png"/></a>
-            <ul>
-                <li><a href="https://heads-up-calendar.onrender.com" target="_blank">Live Site</a></li>
-                <li><a href="https://github.com/Victoria-Contreras/CalendarGroupProject" target="_blank">GitHub</a></li>
-            </ul>
-            <p>Collaborative Project</p>
-            <p>EJS Template, PostgreSQL, Express, Sequilize</p>
-            <p>The user can create, edit and delete events, share events with friends, and live chat with friends
-                about the events they are attending together.
-                <br />My role was to create Express API routes to update and retrieve events from our PostgreSQL
+    <div class="projects-container row justify-content-evenly" >
+        <div class="project col-lg-5">
+            <div class="project-photo">
+                <a href="https://heads-up-calendar.onrender.com" target="_blank"><img src="./images/heads-up.png"></a>
+            </div>
+            <div class="project-header">
+                <h4>Heads Up</h4>
+                <p>Users can create, edit and delete events, share events with friends, and live chat
+                about the events they are attending together.</p>
+            </div>
+            <div class="project-details">
+                <p> 
+                    <strong>Built by</strong> 
+                    <a href="https://www.linkedin.com/in/thomas-lee-43483829/" target="_blank">Thomas Lee</a>, 
+                    <a href="https://www.linkedin.com/in/mia-moore-32764424a/" target="_blank">Mia Moore</a> and 
+                    <a href="https://www.linkedin.com/in/victoria-contreras/" target="_blank">Victoria Contreras</a> 
+                </p>
+                <p><strong>Built with</strong> EJS Template + PostgreSQL + Express + Sequilize</p>
+            </div>
+            <div class="project-role">
+               <p>
+                 My role was to create Express API routes to update and retrieve events from our PostgreSQL
                 database. I also collaborated with my classmates on displaying event information and creating
-                the necessary associations in our tables giving the user a social app experience.
-            </p>
+                associations in our database tables giving the user a social app experience.
+                </p>
+            </div>
+            <div class="project-links">
+                <a class="btn btn-outline-dark" role="button" href="https://heads-up-calendar.onrender.com" target="_blank">Live Site</a>
+                <a class="btn btn-outline-dark" role="button" href="https://github.com/Victoria-Contreras/CalendarGroupProject" target="_blank">GitHub</a>
+            </div>
         </div>
-        <div class="project">
-            <h4>What's for dinner?</h4>
-            <a href="https://victoria-contreras.github.io/whats_for_dinner/" target="_blank"><img src="images/dinner.png"/></a>
-            <ul>
-                <li><a href="https://victoria-contreras.github.io/whats_for_dinner/" target="_blank">Live
-                        Site</a></li>
-                <li><a href="https://github.com/Victoria-Contreras/whats_for_dinner" target="_blank">GitHub</a>
-                </li>
-            </ul>
-            <p>Collaborative Project</p>
-            <p>JavaScript, HTML, CSS, and API's</p>
-            <p>The user is presented a dish and cooking instructions based on the type
+        <div class="project col-lg-5 ">
+            <div class="project-photo">
+                <a href="https://victoria-contreras.github.io/whats_for_dinner/" target="_blank"><img src="images/dinner.png" /></a>
+            </div>
+            <div class="project-header">
+                <h4>What's for dinner?</h4>
+                <p>The user is presented a dish and cooking instructions based on the type
                 of food they searched. They can find a drink pairing by using the random
-                drink generator. <br />My role was to use JavaScript to make API calls and manipulate to DOM
-                to display recipes. I organized a clean coding style for the project and
-                helped my classmates understand JavaScript logic.</p>
+                drink generator.</p>
+            </div>
+            <div class="project-details">
+                <p> 
+                    <strong>Built by</strong>
+                    <a href="https://www.linkedin.com/in/kristina-song/" target="_blank">Kristina Song</a>,
+                    <a href="https://www.linkedin.com/in/destinysimpkins/" target="_blank">Destiny Simpkins</a> and
+                    <a href="https://www.linkedin.com/in/victoria-contreras/" target="_blank">Victoria Contreras</a>
+                </p>
+                <p><strong>Built with</strong> JavaScript + HTML + CSS + API's</p>
+            </div>
+            <div class="project-role">
+                <p>
+                    My role was to use JavaScript to make API calls and manipulate to DOM
+                    to display recipes. I organized a clean coding style for the project and
+                    helped my classmates with JavaScript logic.
+                </p>
+
+            </div>
+            <div class="project-links">
+                <a class="btn btn-outline-dark" role="button" href="https://victoria-contreras.github.io/whats_for_dinner/" target="_blank">Live Site</a>
+                <a class="btn btn-outline-dark" role="button" href="https://github.com/Victoria-Contreras/whats_for_dinner" target="_blank">GitHub</a>
+                
+            </div>
         </div>
-        <div class="project">
-            <h4>SunShine</h4>
-            <a href="https://react-weather-app-yuaf.onrender.com/" target="_blank"><img src="images/weather-app.png"/></a>
-            <ul>
-                <li><a href="https://react-weather-app-yuaf.onrender.com/" target="_blank">Live Site</a></li>
-                <li><a href="https://github.com/Victoria-Contreras/react-weather-app" target="_blank">GitHub</a>
-                </li>
-            </ul>
-            <p>Solo Project</p>
-            <p>React, Redux, Node.js, PostgreSQL, Express, Sequilize</p>
-            <p>When the user searches for a city they can see the detailed current weather and the
-                forecast for the next 7 days. They can save their favorite cities by creating an account</p>
+        <div class="project col-lg-5 solo">
+            <div class="project-photo">
+                <a href="https://react-weather-app-yuaf.onrender.com/" target="_blank"><img src="images/weather-app.png"/></a>
+            </div>
+            <div class="project-header">
+                <h4>SunShine</h4>
+                <p>
+                    When the user searches for a city they can see the detailed current weather and the
+                    forecast for the next 7 days. They can save their favorite cities by creating an account
+                </p>
+            </div>
+            <div class="project-details">
+                <p>
+                    <strong>Built by</strong>
+                    <a href="https://www.linkedin.com/in/victoria-contreras/" target="_blank">Victoria Contreras</a>
+                </p>
+                <p><strong>Built with</strong> React + Redux + Node.js + PostgreSQL + Express +  Sequilize</p>
+            </div>
+            <div class="project-links">
+                <a class="btn btn-outline-dark" role="button" href="https://react-weather-app-yuaf.onrender.com/" target="_blank">Live Site</a>
+                <a class="btn btn-outline-dark" role="button" href="https://github.com/Victoria-Contreras/react-weather-app" target="_blank">GitHub</a>
+            </div>
         </div>
    </div>
 
