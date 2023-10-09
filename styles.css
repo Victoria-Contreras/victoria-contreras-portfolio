@@ -2,6 +2,12 @@ body {
     margin: 0;
     font-family: 'Montserrat', sans-serif !important;
 }
+
+html {
+    margin: 0;
+    overflow-x: hidden;
+}
+
 h1 {
     font-family: 'Tenor Sans', sans-serif !important;
     font-size: 45px !important;
@@ -324,7 +330,48 @@ nav {
     width: 80%;
 }
 
+/* Contact / Footer */
+#contact {
+    margin-top: 2em;
+    background-color: #e3dacc;
+    min-height: 100vh;
+}
 
+.form-section {
+    padding: 3em !important;
+}
+
+.form-section h5 {
+    text-align: center;
+    font-size: 2.5em;
+    font-family: 'Tenor Sans',
+        sans-serif !important;;
+}
+
+.contact-photo{
+    padding: 3em 0;
+    display: flex;
+    justify-content: center;
+}
+.contact-photo img {
+    height: 60vh;
+}
+
+.contact-links {
+    padding: 2em 1em;
+}
+.icons {
+    text-align: center;
+    padding-top: 1em;
+}
+.icons p {
+    margin-top: 1em;
+}
+
+.icons a {
+    text-decoration: none;
+    color: black;
+}
 /* Color pallette
     Soft Brown rgb(220 212 204) dcd4cc
     Sage #7EAC69
