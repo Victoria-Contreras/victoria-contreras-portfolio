@@ -122,7 +122,7 @@ header {
 nav {
     width: 100%;
     background-color: transparent;
-    transition: background-color 0.4s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
 }
 .scrolled-nav {
     background-color: #e3dacc;
@@ -178,6 +178,7 @@ h2 {
     padding: 5em 1.5em 0;
     text-align: center;
     line-height: 2;
+    background: linear-gradient(#e3dacc, transparent);
 }
 
 @media only screen and (min-width: 1200px) {
@@ -232,12 +233,12 @@ h2 {
 }
 /* Transition */
 #transition-photo {
-    background-image: url('./images/portrait-1.jpg');
+    background-image: url('./images/portrait-2.jpg');
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-position: center center;
+    background-position: center 30%;
     padding: 8rem 0;
     background-attachment: fixed;
 }
@@ -347,9 +348,14 @@ hr {
     color: black;
 }
 
-.icons:hover {
-    text-decoration: underline;
+.icons i {
+    color: rgb(83, 82, 82);
 }
+
+.icons:hover a, .icons:hover i {
+    color: #7EAC69;
+}
+
 
 
 /* Color pallette
