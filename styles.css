@@ -7,6 +7,7 @@ body {
 html {
     margin: 0;
     overflow-x: hidden;
+    background-color: #e3dacc;
 }
 
 h1 {
@@ -125,10 +126,6 @@ h5 {
 header {
     padding: 0 !important;
     margin: 0 !important;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    background: linear-gradient(#e3dacc 95%, transparent);
 }
 
 nav {
@@ -137,51 +134,21 @@ nav {
 }
 
 #cover-photo {
-    background-image: url('./images/portrait-standing.jpg');
+    background-image: url('./images/portrait-brown.jpg');
     height: 100vh;
     width: 100%;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-position: center 25%;
+    background-position: center center;
 }
 
-
-@media only screen and (min-width: 1200px){
-    header {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 10% auto;
-    }
-
-    #cover-photo {
-        background-image: url('./images/portrait-standing.jpg');
-        min-height: 110%;
-        height: 100vh;
-        background-size: cover;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-position: center center;
-        background-attachment: scroll;
-        grid-column-start: 1;
-        grid-row-start: 2;
-        position: relative;
-        top: -15%;
-    }
-
-    nav {
-        grid-column-start: 2;
-        grid-row-start: 1;
-    }
-
-    .about{
-        grid-column-start: 2;
-        grid-row-start: 2;
-    }
+#hello {
+    text-align: center;
+    position: relative;
+    top: 50%;
 }
-
 /* About */
 .about {
     padding: 8vh 6vh;
@@ -191,7 +158,7 @@ nav {
 
 @media only screen and (min-width: 1200px) {
     .about {
-        padding: 8% 10%;
+        padding: 8% 25%;
     }
 }
 
